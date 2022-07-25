@@ -16,7 +16,7 @@
 
 本项目包含设置文件 ComponentCollectionSettings.asset，可放置于 Asset 目录下任意位置。
 
-设置文件仅需要一个，丢失后可在 Project 窗口中通过 "Game/Component Collection Settings" 创建。
+设置文件仅需要一个，丢失后可在 Project 窗口中通过 "Create/Game/Component Collection Settings" 创建。
 
 为要进行自动绑定物体挂载 ComponentCollection 脚本；
 

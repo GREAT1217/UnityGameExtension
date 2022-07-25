@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using UnityEngine;
+using Game;
+
+namespace __NAME_SPACE__
+{
+    public partial class __CLASS_NAME__ : MonoBehaviour
+    {
+        void Start()
+        {
+            InitComponents(gameObject);
+        }
+    }
+}

@@ -32,9 +32,9 @@
 
 设置自动生成的绑定代码的命名空间 NameSpace、类名 Class Name 与保存路径 Code Save Path。
 
-点击 Generate Components Code，自动代码文件 ClassName.Components.cs ，包含所有绑定的组件字段。
+点击 Generate Components Code，自动生成代码文件 ClassName.Components.cs ，包含所有绑定的组件字段。
 
-点击 Generate Behaviour Code，自动代码文件 ClassName.cs，继承自 MonoBehaviour，可直接访问绑定的组件字段。
+点击 Generate Behaviour Code，自动生成代码文件 ClassName.cs，继承自 MonoBehaviour，可直接访问绑定的组件字段。
 
 等待生成代码编译后，点击 Add Behaviour Code，自动添加 ClassName.cs 组件。
 

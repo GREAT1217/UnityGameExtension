@@ -1,6 +1,6 @@
 # ComponentCollection
 
-组件自动绑定工具。本项目代码灵感来源于 [CatImmortal](https://github.com/CatImmortal) 的 [ComponentAutoBind](https://github.com/CatImmortal/ComponentAutoBindTool)。
+组件自动绑定工具。本项目代码灵感来源于[CatImmortal](https://github.com/CatImmortal)的[ComponentAutoBind](https://github.com/CatImmortal/ComponentAutoBindTool)。
 
 重构了 Editor 代码逻辑，增加了一些编辑器辅助功能。
 
@@ -42,7 +42,7 @@
 
 ## 其他用法
 
-在不使用 Generate 自动生成代码时，可以自定义调用 ```ComponentCollection 的 GetComponent<T>(int)``` 根据索引获取组件。
+在不使用 Generate 自动生成代码时，可以自定义调用```ComponentCollection 的 GetComponent<T>(int)```根据索引获取组件。
 
 自定义调用后，如果修改了子物体层级，或增删了子物体，可以使用 Collect To Add：在不修改旧的组件列表的顺序的情况下，增加组件。
 
@@ -50,4 +50,4 @@
 
 ## 感谢
 
-❤ 再次感谢 [CatImmortal](https://github.com/CatImmortal) 的开源。
+❤ 再次感谢[CatImmortal](https://github.com/CatImmortal)的开源。

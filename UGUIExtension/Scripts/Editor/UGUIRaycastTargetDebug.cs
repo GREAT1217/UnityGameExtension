@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class UGUIRaycastTargetDebug : Editor
 {
-    private const string MenuItemName = "Game Exception/Debug Raycast Target";
+    private const string MenuItemName = "Game Extension/Debug Raycast Target";
     private const string PrefsKey = "DebugRaycastTarget";
 
     private static bool s_DebugRaycastTarget;

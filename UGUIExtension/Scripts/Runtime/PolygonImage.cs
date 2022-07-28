@@ -3,7 +3,7 @@
 // copy from Empty4Raycast. https://blog.uwa4d.com/archives/fillrate.html
 namespace UnityEngine.UI
 {
-    [AddComponentMenu("UI/Effects/PolygonImage", 17)]
+    [AddComponentMenu("UI/Effects/Polygon Image", 17)]
     [DisallowMultipleComponent]
     [RequireComponent(typeof(Image))]
     public class PolygonImage : BaseMeshEffect

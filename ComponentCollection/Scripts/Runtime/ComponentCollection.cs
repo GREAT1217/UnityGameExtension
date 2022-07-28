@@ -15,6 +15,7 @@ namespace Game
          */
                 
         // 是否已设置过默认值
+        #pragma warning disable 0414
         [SerializeField] private bool m_Setup;
         
         // Collect settings

@@ -25,7 +25,7 @@ namespace GameExtension.Editor
                 UnityEditor.PrefabUtility.SaveAsPrefabAssetAndConnect(prefab, prefabPath, InteractionMode.AutomatedAction, out saveResult);
                 return saveResult;
             }
-            
+
             UnityEditor.PrefabUtility.SavePrefabAsset(prefab, out saveResult);
             return saveResult;
         }

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
-using UnityEngine;
 
 namespace GameExtension.Editor
 {
@@ -34,7 +33,6 @@ namespace GameExtension.Editor
         {
             if (string.IsNullOrEmpty(typeName))
             {
-                Debug.LogError("Type name is invalid.");
                 return null;
             }
 

@@ -1,4 +1,6 @@
 ﻿using UnityEditor;
+using UnityEditor.Experimental.SceneManagement;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,7 +21,7 @@ namespace GameExtension.Editor
 #if UNITY_2019_1_OR_NEWER
             SceneView.duringSceneGui += DrawRaycastTargetGUI;
 #else
-        SceneView.onSceneGUIDelegate += DrawRaycastTargetGUI;
+            SceneView.onSceneGUIDelegate += DrawRaycastTargetGUI;
 #endif
             s_DebugRaycastTarget = EditorPrefs.GetBool(PrefsKey, false);
             Menu.SetChecked(MenuItemName, s_DebugRaycastTarget);
@@ -40,8 +42,11 @@ namespace GameExtension.Editor
                 return;
             }
 
+            PrefabStage prefabStage = PrefabStageUtility.GetCurrentPrefabStage();
+            MaskableGraphic[] maskableGraphic = prefabStage == null ? FindObjectsOfType<MaskableGraphic>() : prefabStage.prefabContentsRoot.GetComponentsInChildren<MaskableGraphic>();
+
             Vector3[] fourCornerArray = new Vector3[4];
-            foreach (var graphic in Object.FindObjectsOfType<MaskableGraphic>())
+            foreach (var graphic in maskableGraphic)
             {
                 if (graphic.raycastTarget)
                 {

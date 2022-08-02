@@ -14,7 +14,7 @@ UGUI 扩展与常用优化。
 
 ![Custom_UI](https://gitee.com/great1217/cdn/raw/master/images/Custom_UI.jpg)
 
-- 提供了 RaycastTarget 查看器，可在菜单栏勾选 “Game Extension / Debug Raycast Target” 即可在 Scene 窗口中查看 UI 中的 RaycastTarget 对象。
+- 提供了 RaycastTarget 查看器，可在菜单栏勾选 “Game Extension / Debug Raycast Target” 即可在 Scene 窗口中查看 UI 中的 RaycastTarget 对象，支持在预制体预览场景查看。
 
 ![UI_DebugRaycast](https://gitee.com/great1217/cdn/raw/master/images/UI_DebugRaycast.jpg)
 

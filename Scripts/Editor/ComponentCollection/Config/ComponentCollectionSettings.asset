@@ -12,13 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3e46a0b33f424c898c3d2b5ece5c98, type: 3}
   m_Name: ComponentCollectionSettings
   m_EditorClassIdentifier: 
-  m_EditorAssemblyNames:
-  - Assembly-CSharp-Editor
-  - ComponentCollection.Editor
-  m_RuntimeAssemblyNames:
-  - Assembly-CSharp
-  - ComponentCollection
-  m_CollectorTypeName: Game.Editor.DefaultComponentCollector
+  m_CollectorTypeName: GameExtension.Editor.DefaultComponentCollector
   m_ComponentMaps:
   - m_TypeKey: Tran
     m_TypeName: Transform
@@ -66,10 +60,12 @@ MonoBehaviour:
     m_TypeName: RectMask2D
   m_DefaultFieldNamePrefix: m_
   m_DefaultFieldNameByType: 0
-  m_GeneratorTypeName: Game.Editor.DefaultCollectionGenerator
+  m_GeneratorTypeName: GameExtension.Editor.DefaultCollectionGenerator
   m_DefaultNameSpace: Game
   m_DefaultCodeSavePath: Assets
   m_ComponentsCodeTemplate: {fileID: 4900000, guid: c6f0d32e04aad824d8dc966bc6d7aa10,
     type: 3}
   m_BehaviourCodeTemplate: {fileID: 4900000, guid: 87d428d27da5eb9468fb96d62a01ca10,
+    type: 3}
+  m_CollectionExtensionCodeTemplate: {fileID: 4900000, guid: 968fd7c800fec3d4baf9160f97e61dc1,
     type: 3}

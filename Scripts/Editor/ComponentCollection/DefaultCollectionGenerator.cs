@@ -77,8 +77,8 @@ namespace GameExtension.Editor
             }
 
             // 去除最后的换行符
-            field = fieldBuilder.ToString().Substring(0, fieldBuilder.Length - 2);
-            getField = getFieldBuilder.ToString().Substring(0, getFieldBuilder.Length - 2);
+            field = fieldBuilder.ToString().TrimEnd();
+            getField = getFieldBuilder.ToString().TrimEnd();
         }
 
         /// <summary>

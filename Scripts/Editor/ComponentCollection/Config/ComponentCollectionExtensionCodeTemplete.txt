@@ -1,27 +1,17 @@
 ﻿//------------------------------------------------------------
 // 此文件由 ComponentCollection 自动生成，请勿直接修改。
+// 用于在不方便使用非泛型的语言中（如XLua）调用 GetComponent 函数
 // 生成时间：__CREATE_TIME__
 //------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using GameExtension;
 
 namespace __NAME_SPACE__
 {
-    public partial class __CLASS_NAME__ 
+    public static class ComponentCollectionExtension 
     {
-__FIELD__
-
-        /// <summary>
-        /// 初始化组件。
-        /// </summary>
-        public void InitComponents(GameObject target)
-        {
-            var collection = target.GetComponent<ComponentCollection>();
-__GET_FIELD__
-        }
+__GET_COMPONENT__
     }
 }

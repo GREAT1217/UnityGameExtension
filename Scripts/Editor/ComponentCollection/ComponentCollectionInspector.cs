@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text.RegularExpressions;
 using UnityEditor;
 using UnityEngine;
 
@@ -12,8 +11,6 @@ namespace GameExtension.Editor
     {
         private const string NoneOptionName = "<None>";
         private readonly string[] m_FieldNameRule = {"TypeKey", "TypeName"};
-        private readonly Regex m_DefaultNameRegex = new Regex(@"^[A-Za-z][A-Za-z0-9_]*$");
-        private readonly Regex m_FieldNameRegex = new Regex(@"^[A-Za-z_][A-Za-z0-9_]*$");
 
         private int m_ExitsSettingsCount;
         private ComponentCollectionSettings m_Settings;
@@ -564,14 +561,14 @@ namespace GameExtension.Editor
             }
 
             string nameSpace = m_NameSpace.stringValue;
-            if (string.IsNullOrEmpty(nameSpace) || !m_DefaultNameRegex.IsMatch(nameSpace))
+            if (string.IsNullOrEmpty(nameSpace) || !m_Settings.m_DefaultNameRegex.IsMatch(nameSpace))
             {
                 Debug.LogErrorFormat("NameSpace '{0}' is invalid.", nameSpace);
                 return false;
             }
 
             string className = m_ClassName.stringValue;
-            if (string.IsNullOrEmpty(className) || !m_DefaultNameRegex.IsMatch(className))
+            if (string.IsNullOrEmpty(className) || !m_Settings.m_DefaultNameRegex.IsMatch(className))
             {
                 Debug.LogErrorFormat("Class name '{0}' is invalid.", className);
                 return false;
@@ -601,6 +598,7 @@ namespace GameExtension.Editor
         {
             if (Generator == null)
             {
+                Debug.LogError("Generator is null.");
                 return;
             }
 
@@ -628,7 +626,7 @@ namespace GameExtension.Editor
             for (int i = 0; i < m_FieldNames.arraySize; i++)
             {
                 string fieldName = m_FieldNames.GetArrayElementAtIndex(i).stringValue;
-                if (string.IsNullOrEmpty(fieldName) || !m_FieldNameRegex.IsMatch(fieldName))
+                if (string.IsNullOrEmpty(fieldName) || !m_Settings.m_FieldNameRegex.IsMatch(fieldName))
                 {
                     Debug.LogErrorFormat("Field name '{0}' is invalid.", fieldName);
                     continue;
@@ -650,6 +648,7 @@ namespace GameExtension.Editor
         {
             if (Generator == null)
             {
+                Debug.LogError("Generator is null.");
                 return;
             }
 

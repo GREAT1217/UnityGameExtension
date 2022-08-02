@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using UnityEngine;
 
 namespace GameExtension.Editor
@@ -68,6 +69,8 @@ namespace GameExtension.Editor
         public string m_DefaultFieldNamePrefix = "m_";
         [Tooltip("字段名是否使用组件类型 默认值。")]
         public bool m_DefaultFieldNameByType = false;
+        // 组件类型映射字典。
+        private Dictionary<string, string> m_ComponentMapDict;
 
         [Space(4)]
         [Header("Generate")]
@@ -81,8 +84,14 @@ namespace GameExtension.Editor
         public TextAsset m_ComponentsCodeTemplate;
         [Tooltip("代码模板。")]
         public TextAsset m_BehaviourCodeTemplate;
+        [Space(4)]
+        [Header("Extension")]
+        [Tooltip("代码模板。")]
+        public TextAsset m_CollectionExtensionCodeTemplate;
 
-        private Dictionary<string, string> m_ComponentMapDict;
+        // 命名规范正则表达式
+        public Regex m_DefaultNameRegex = new Regex(@"^[A-Za-z][A-Za-z0-9_]*$");
+        public Regex m_FieldNameRegex = new Regex(@"^[A-Za-z_][A-Za-z0-9_]*$");
 
         /// <summary>
         /// 组件类型映射字典。

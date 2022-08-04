@@ -50,7 +50,7 @@ namespace GameExtension
             T component = m_Components[index] as T;
             if (component == null)
             {
-                Debug.LogError("Get component failed with invalid type.");
+                Debug.LogErrorFormat("Get component failed with invalid type, index = {0}.", index);
                 return null;
             }
 

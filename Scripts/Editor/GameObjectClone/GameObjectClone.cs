@@ -88,7 +88,7 @@ namespace GameExtension.Editor
             //     return;
             // }
 
-            CloneComponents(templateTransform, targetTransform);
+            // CloneComponents(templateTransform, targetTransform);
 
             // 递归处理子物体
 
@@ -102,7 +102,7 @@ namespace GameExtension.Editor
 
             for (int i = targetChildren - 1; i >= templateChildren; i--) // 去除 相对于模板的 多余的子物体
             {
-                Destroy(targetTransform.GetChild(i).gameObject);
+                DestroyImmediate(targetTransform.GetChild(i).gameObject);
             }
 
             int number = Mathf.Min(templateChildren, targetChildren);

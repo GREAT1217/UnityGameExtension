@@ -198,6 +198,9 @@ namespace GameExtension.Editor
             }
             generatorTypeNames.Clear();
 
+            // m_FieldNameRuleIndex
+            m_FieldNameRuleIndex = m_FieldNameByType.boolValue ? 1 : 0;
+
             // Runtime Components
             m_Components = serializedObject.FindProperty("m_Components");
         }

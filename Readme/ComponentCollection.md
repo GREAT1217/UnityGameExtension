@@ -12,7 +12,7 @@
 
 支持自定义组件字段生成规则，包含字段前缀和字段命名类型。
 
-| ![ComponentCollection](https://gitee.com/great1217/cdn/raw/master/images/ComponentCollection.jpg) | <img src="https://gitee.com/great1217/cdn/raw/master/images/ComponentCollectionCode.png" alt="ComponentCollectionCode" style="zoom:80%;" /> |
+| ![ComponentCollection](https://gitee.com/great1217/cdn/raw/master/images/ComponentCollection.png) | ![ComponentCollectionCode](https://gitee.com/great1217/cdn/raw/master/images/ComponentCollectionCode.png) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 ## 基本用法

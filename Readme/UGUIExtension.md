@@ -12,11 +12,11 @@ UGUI 扩展与常用优化。
 
 - 提供了自定义的 UGUI 创建菜单 Custom UI，用于创建 UI 时选择可优化的选项：是否勾选 RaycastTarget，是否创建 Text 子物体，使用 Mask 或 RactMask2D 。
 
-![Custom_UI](https://gitee.com/great1217/cdn/raw/master/images/Custom_UI.jpg)
+![Custom_UI](https://gitee.com/great1217/cdn/raw/master/images/Custom_UI.png)
 
 - 提供了 RaycastTarget 查看器，可在菜单栏勾选 “Game Extension / Debug Raycast Target” 即可在 Scene 窗口中查看 UI 中的 RaycastTarget 对象，支持在预制体预览场景查看。
 
-![UI_DebugRaycast](https://gitee.com/great1217/cdn/raw/master/images/UI_DebugRaycast.jpg)
+![UI_DebugRaycast](https://gitee.com/great1217/cdn/raw/master/images/UI_DebugRaycast.png)
 
 - 增加了由 UWA 开源的两个 UI 优化组件：[UGUI 降低填充率技巧两则 ](https://blog.uwa4d.com/archives/fillrate.html)。
 

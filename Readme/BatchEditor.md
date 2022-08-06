@@ -2,7 +2,7 @@
 
 预制体批量编辑器。
 
-![BatchEditor](https://gitee.com/great1217/cdn/raw/master/images/BatchEditor.jpg)
+![BatchEditor](https://gitee.com/great1217/cdn/raw/master/images/BatchEditor.png)
 
 通过菜单栏 "Game Extension/Batch Editor" 打开批量编辑器窗口，可打开多个。
 
